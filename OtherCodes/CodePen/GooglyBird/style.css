@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: calc(0.4rem + 0.5vw + 0.5vh);
+  }
+  .main-cont {
+    height: 100vh;
+    width: 100%;
+    background: #e0e0e0;
+    overflow: hidden;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .canvas {
+    transform: rotate(-2deg);
+  }
+  .bird-body {
+    position: relative;
+    background-color: #a855fd;
+    width: 24rem;
+    height: 24rem;
+    border-radius: 50% 50% 50% 50% / 55% 55% 45% 45%;
+    border: 0.3rem solid black;
+  }
+  .eyescont {
+    display: flex;
+    gap: 0.5rem;
+    overflow: hidden;
+    position: absolute;
+    top: -3rem;
+    left: -1.6rem;
+    z-index: 5;
+  }
+  .eye-wrapper {
+    width: 13rem;
+    height: 12rem;
+    background: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 0.3rem solid black;
+    overflow: hidden;
+  }
+  .eye {
+    width: 90%;
+    height: 100%;
+    background: #fefefe;
+    position: relative;
+  }
+  /* Pupil */
+  .eye::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background: rgb(5, 5, 5);
+    width: 39%;
+    height: 39%;
+    border-radius: 50%;
+  }
+  
+  .beak {
+    position: absolute;
+    top: -3.7rem;
+    left: 8.5rem;
+  }
+  
+  .triangle {
+    position: relative;
+    margin: 12.5rem auto;
+    width: 0;
+    height: 0;
+    border-left: 3.5rem solid transparent;
+    border-right: 3.5rem solid transparent;
+    border-top: 4.5rem solid black;
+  }
+  
+  .triangle::before {
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: "";
+    border-left: 3rem solid transparent;
+    border-right: 3rem solid transparent;
+    border-top: 3rem solid #ffc501;
+    top: -4.4rem;
+    left: -3rem;
+  }
+  .wings {
+    position: relative;
+    z-index: -1;
+  }
+  
+  .wings::before {
+    position: absolute;
+    height: 12rem;
+    width: 5rem;
+    content: "";
+    background-color: #3e007f;
+    border: 0.3rem solid black;
+    border-radius: 52% 48% 0% 100% / 31% 20% 80% 69%;
+    left: -2.3rem;
+    top: 7.5rem;
+  }
+  .wings::after {
+    position: absolute;
+    height: 12rem;
+    width: 5rem;
+    content: "";
+    background-color: #3e007f;
+    border: 0.3rem solid black;
+    border-radius: 52% 55% 100% 0% / 66% 37% 66% 20%;
+    right: -2.3rem;
+    top: 7.5rem;
+  }
+  
+  .legs {
+    position: absolute;
+    bottom: 0;
+    left: 11.7rem;
+  }
+  
+  .legs::before {
+    z-index: 9;
+    height: 5rem;
+    width: 0.7rem;
+    position: absolute;
+    background-color: #ffc501;
+    border: 0.4rem solid black;
+    content: "";
+    left: 1rem;
+    bottom: -4rem;
+    z-index: -1;
+    border-radius: 49% 51% 53% 47% / 40% 40% 60% 60%;
+  }
+  .legs::after {
+    z-index: 9;
+    height: 5rem;
+    width: 0.7rem;
+    content: "";
+    position: absolute;
+    background-color: #ffc501;
+    border: 0.4rem solid black;
+    right: 1rem;
+    bottom: -4rem;
+    z-index: -1;
+    border-radius: 49% 51% 53% 47% / 40% 40% 60% 60%;
+  }
+  
+  .fingers {
+    position: absolute;
+    bottom: 1rem;
+    left: 11rem;
+  }
+  .fingers::before {
+    height: 5rem;
+    width: 7rem;
+    background-color: #ffc501;
+    position: absolute;
+    content: "";
+    border: 0.4rem solid #ffc501;
+    clip-path: polygon(48% 71%, 89% 100%, 48% 86%, 5% 100%);
+    left: -1.3rem;
+    z-index: 770;
+  }
+  
+  .fingers::after {
+    height: 5rem;
+    width: 7rem;
+    background-color: #ffc501;
+    position: absolute;
+    content: "";
+    border: 0.4rem solid #ffc501;
+    clip-path: polygon(48% 71%, 89% 100%, 48% 86%, 5% 100%);
+    right: -3rem;
+    z-index: 20;
+  }
+  
+  .shadow {
+    background: rgb(95, 95, 95);
+    height: 3rem;
+    width: 18rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -2;
+    bottom: -6rem;
+    left: 1rem;
+    transform: rotate(2deg);
+  }
+  
+  .links {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+  }
+  .links a {
+    color: black;
+    font-family: sans-serif;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+  }
+  
