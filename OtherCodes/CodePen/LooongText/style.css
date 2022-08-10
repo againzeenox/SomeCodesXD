@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+
+html {
+  font-family: "Kanit", sans-serif;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+}
+
+#result {
+  flex: 2;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.vowels {
+  color: #ee6352;
+}
+
+.char {
+  --char-delay: calc((1s / var(--char-total)) * var(--char-index));
+
+  animation: 0.1s ease-in-out infinite alternate letterShake;
+  animation-delay: var(--char-delay);
+  color: inherit;
+  display: inline-block;
+}
+
+@keyframes letterShake {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-4px);
+  }
+}
+
+.word-cursor {
+  animation: 1s infinite blink;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.vowel-controls {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+}
+
+button {
+  appearance: none;
+  background: transparent;
+  border: solid 2px black;
+  box-shadow: 5px 5px #ee6352;
+  cursor: pointer;
+  flex: 1;
+  margin: 10px;
+}
+
+button:active {
+  box-shadow: none;
+}

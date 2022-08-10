@@ -1,0 +1,146 @@
+.cursors{
+    width: 150px;
+    height: 108px;
+}
+
+#alias:hover{
+    cursor: alias;
+}
+#all-scroll:hover{
+    cursor: all-scroll;
+}
+#auto:hover{
+    cursor: auto;
+}
+#cell:hover{
+    cursor: cell;
+}
+#col-resize:hover{
+    cursor: col-resize;
+}
+#context-menu:hover{
+    cursor: context-menu;
+}
+#copy:hover{
+    cursor: copy;
+}
+#crosshair:hover{
+    cursor: crosshair;
+}
+#default:hover{
+    cursor: default;
+}
+#e-resize:hover{
+    cursor: e-resize;
+}
+#ew-resize:hover{
+    cursor: ew-resize;
+}
+#grab:hover{
+    cursor: grab;
+}
+#grabbing:hover{
+    cursor: grabbing;
+}
+#help:hover{
+    cursor: help;
+}
+#move:hover{
+    cursor: move;
+}
+#n-resize:hover{
+    cursor: n-resize;
+}
+#ne-resize:hover{
+    cursor: ne-resize;
+}
+#nesw-resize:hover{
+    cursor: nesw-resize;
+}
+#no-drop:hover{
+    cursor: no-drop;
+}
+#none:hover{
+    cursor: none;
+}
+#not-allowed:hover{
+    cursor: not-allowed;
+}
+#ns-resize:hover{
+    cursor: ns-resize;
+}
+#nw-resize:hover{
+    cursor: nw-resize;
+}
+#nwse-resize:hover{
+    cursor: nwse-resize;
+}
+#pointer:hover{
+    cursor: pointer;
+}
+#progress:hover{
+    cursor: progress;
+}
+#row-resize:hover{
+    cursor: row-resize;
+}
+#s-resize:hover{
+    cursor: s-resize;
+}
+#se-resize:hover{
+    cursor: se-resize;
+}
+#sw-resize:hover{
+    cursor: sw-resize;
+}
+#text:hover{
+    cursor: text;
+}
+#vertical-text:hover{
+    cursor: vertical-text;
+}
+#w-resize:hover{
+    cursor: w-resize;
+}
+#wait:hover{
+    cursor: wait;
+}
+#zoom-in:hover{
+    cursor: zoom-in;
+}
+#zoom-out:hover{
+    cursor: zoom-out;
+}
+#-moz-grab:hover{
+    cursor: -moz-grab;
+}
+#-moz-grabbing:hover{
+    cursor: -moz-grabbing;
+}
+#-moz-zoom-in:hover{
+    cursor: -moz-zoom-in;
+}
+#-moz-zoom-out:hover{
+    cursor: -moz-zoom-out;
+}
+#-webkit-grab{
+    cursor: -webkit-grab;
+}
+#-webkit-grabbing{
+    cursor: -webkit-grabbing;
+}
+#-webkit-zoom-in{
+    cursor: -webkit-zoom-in;
+}
+#-webkit-zoom-out{
+    cursor: -webkit-zoom-out;
+}
+#inherit{
+    cursor: inherit;
+}
+#initial{
+    cursor: initial;
+}
+#unset{
+    cursor: unset;
+}
