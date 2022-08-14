@@ -1,5 +1,5 @@
 /*
-See on github: https://github.com/muhammederdem/credit-card-form
+See on github: https://github.com/againzeenox/SomeCodesXD/tree/main/OtherCodes/CodePen/CreditCardForm
 */
 
 new Vue({
